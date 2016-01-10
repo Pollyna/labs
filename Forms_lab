@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 Contact Form</title>
+    <link rel="stylesheet" media="screen" href="styles.css" >
+</head>
+<body>
+	<form class="contact_form" action="" method="post" name="contact_form">
+		<ul>
+    		<li>
+         		<h2>Contact Us</h2>
+         		<span class="required_notification">* Denotes Required Field</span>
+    		</li>
+    		<li>
+        		<label for="name" >Name:</label>
+        		<input type="text" name="name" placeholder="John Doe" required/>
+				<span class="form_hint">input your name</span>
+    		</li>
+			
+			<li>
+        		<label for="report" >Date:</label>
+        		<input type="date" name="report_date" placeholder="dd mm yyyy" />
+				<span class="form_hint">input date of receipt  the task</span>
+    		</li>
+			
+			
+			<li>
+        		<label for="start" >Start studies:</label>
+        		<input type="month" name="start" required/>
+				<span class="form_hint">Proper format "month year" </span>
+    		</li>
+			
+			<li>
+        		<label for="work" >Work hours:</label>
+        		<input type="number" name="whours" min="1" max="8" required>
+				<span class="form_hint">Proper format "1-8"</span>
+    		</li>
+			<li>
+        		<label for="points" >Point:</label>
+        		<input type="range" name="points" min="0" max="10">
+				<span class="form_hint">Your received points</span>
+    		</li>
+			<li>
+        		<label for="team_color" >Team color:</label>
+        		<input type="color" name="whours">
+				<span class="form_hint">Choose the color of your team</span>
+    		</li>
+			<li>
+        		<label for="work" >Work hours:</label>
+        		<input type="number" name="whours" min="1" max="8" required>
+				<span class="form_hint">Select time spent</span>
+    		</li>
+			<li>
+				<label for="tel" >Tel:</label>
+				<input type="tel" name="tel" placeholder="+380(11)5555555" required/>
+				<span class="form_hint">Proper format "+380(11)5555555"</span>
+			</li>
+			<li>
+				<label for="email" >Email:</label>
+				<input type="email" name="email" placeholder="john_doe@example.com" required/>
+				<span class="form_hint">Proper format "name@something.com"</span>
+			</li>
+			<li>
+				<label for="website" >Website:</label>
+				<input type="url" name="website" placeholder="http://johndoe.com/" required pattern="(http|https)://.+"/>
+				<span class="form_hint">Proper format "http://someaddress.com"</span>
+			</li>
+			
+			<li>
+				<label for="message">Message:</label>
+				<textarea name="message" cols="40" rows="6" required/></textarea>
+			</li>
+			<li>
+    			<button class="submit" type="submit">Submit Form</button>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>
